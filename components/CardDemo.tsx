@@ -74,10 +74,12 @@ function CardDemo() {
           <WordPullUp words="Caleb Ganza" />
         </div>
         <div className="w-full flex flex-col gap-2">
-          <Button className="w-full rounded-xl text-md gap-3">
-            Get in touch
-            <Send size={16} />
-          </Button>
+          <Link href="https://instagram.com/iamcaleb3rw" target="_blank">
+            <Button className="w-full rounded-xl text-md gap-3">
+              Get in touch
+              <Send size={16} />
+            </Button>
+          </Link>
           <div className="flex items-center">
             <p className="text-muted-foreground">
               ⚡ Literally responds in 24hrs
