@@ -29,7 +29,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="border bg-secondary/60 rounded-md p-1 border-b flex md:gap-10 w-[fit-content] justify-between">
+    <div className="border bg-secondary/60 rounded-md p-1 border-b flex md:gap-10 max-w-fit justify-between overflow-scroll md:overflow-hidden">
       {links.map((item, index) => (
         <Link href={item.href} key={index}>
           <Button
