@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface WordPullUpProps {
-  words: string | React.ReactNode;
+  words: string;
   delayMultiple?: number;
   wrapperFramerProps?: Variants;
   framerProps?: Variants;
