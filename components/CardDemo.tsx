@@ -6,6 +6,8 @@ import { Button } from "./ui/button";
 import profile from "@/public/profile.png";
 import calcadeLogo from "@/public/iconlogo.png";
 import Image from "next/image";
+import BlurIn from "./magicui/blur-in";
+import WordPullUp from "./magicui/word-pull-up";
 
 function CardDemo() {
   const languages = [
@@ -54,17 +56,23 @@ function CardDemo() {
     <Card className="w-full md:max-w-[30vw] p-5">
       <div className="text-center flex items-center flex-col gap-3 py-3">
         <div className="relative">
-          <Image
-            src={profile}
-            alt="profile Image"
-            width={120}
-            className="z-10"
+          <BlurIn
+            word={
+              <Image
+                src={profile}
+                alt="profile Image"
+                width={120}
+                className="z-10"
+              />
+            }
           />
           <div className="absolute -bottom-2 backdrop-blur-xl bg-green-300/40 rounded-lg p-1 left-[25%]">
             <p className="text-xs font-semibold text-green-600">AVAILABLE</p>
           </div>
         </div>
-        <h1 className="text-3xl font-bold mt-3 tracking-tight">Caleb Ganza</h1>
+        <div className="text-3xl font-bold mt-3 tracking-tight">
+          <WordPullUp words="Caleb Ganza" />
+        </div>
         <div className="w-full flex flex-col gap-2">
           <Button className="w-full rounded-xl text-md gap-3">
             Get in touch
