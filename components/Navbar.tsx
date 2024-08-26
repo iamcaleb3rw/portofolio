@@ -115,10 +115,10 @@ function Navbar() {
               <div className="grid grid-cols-4 gap-2 mt-5">
                 {socials.map((item, index) => {
                   return (
-                    <TooltipProvider>
+                    <TooltipProvider key={index}>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <Link href={item.href} key={index} target="_blank">
+                          <Link href={item.href} target="_blank">
                             <div className="border p-3 flex items-center justify-center rounded-lg hover:bg-primary-foreground cursor-pointer">
                               <item.icon />
                             </div>
