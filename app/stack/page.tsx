@@ -76,7 +76,10 @@ const Stack = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-2">
           {tools.map((item, id) => (
-            <div className="border p-2 rounded-lg shadow-sm flex flex-col items-center justify-center">
+            <div
+              key={id}
+              className="border p-2 rounded-lg shadow-sm flex flex-col items-center justify-center"
+            >
               <Image src={item.imgUrl} alt="logo" width={40} />
               <h1 className="">{item.name}</h1>
             </div>

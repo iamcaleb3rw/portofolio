@@ -118,7 +118,7 @@ function Navbar() {
                     <TooltipProvider>
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <Link href={item.href} target="_blank">
+                          <Link href={item.href} key={index} target="_blank">
                             <div className="border p-3 flex items-center justify-center rounded-lg hover:bg-primary-foreground cursor-pointer">
                               <item.icon />
                             </div>
