@@ -39,7 +39,7 @@ export default function WordPullUp({
         className
       )}
     >
-      {words.split(" ").map((word, i) => (
+      {("" || words).split(" ").map((word, i) => (
         <motion.span
           key={i}
           variants={framerProps}
