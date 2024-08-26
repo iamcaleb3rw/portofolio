@@ -11,7 +11,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import { AnimatedSubscribeButton } from "./magicui/animated-subscribe-button";
 import {
   CheckIcon,
   ChevronRightIcon,
