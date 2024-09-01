@@ -7,6 +7,7 @@ import CardDemo from "@/components/CardDemo";
 import Title from "@/components/Title";
 import Navigation from "@/components/navigation";
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Caleb Ganza",
@@ -37,6 +38,7 @@ export default function RootLayout({
             </div>
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
