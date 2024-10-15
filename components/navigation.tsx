@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   let [selectedIndex, setSelectedIndex] = useState(0);
@@ -28,16 +30,21 @@ const Navigation = () => {
     console.log(event);
   };
 
+  const pathname = usePathname();
   return (
     <div className="border bg-secondary/60 rounded-md p-1 border-b flex md:gap-10 max-w-fit justify-between overflow-scroll md:overflow-hidden">
       {links.map((item, index) => (
         <Link href={item.href} key={index}>
-          <Button
-            variant={selectedIndex === index ? "default" : "ghost"}
-            onClick={() => setSelectedIndex(index)}
+          <div
+            className={cn(
+              "px-4 py-3",
+              pathname.includes(item.href)
+                ? "bg-foreground text-secondary rounded-sm"
+                : null
+            )}
           >
             {item.label}
-          </Button>
+          </div>
         </Link>
       ))}
     </div>

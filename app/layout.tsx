@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import CardDemo from "@/components/CardDemo";
 import Title from "@/components/Title";
 import Navigation from "@/components/navigation";
+import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react";
 
@@ -20,26 +21,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <div className="flex flex-col md:flex-row md:mt-7 p-5 gap-4">
-            <CardDemo />
-            <div className="flex flex-col w-full">
-              <Title />
-              <Navigation />
-              <div className="">{children}</div>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            <div className="flex flex-col md:flex-row md:mt-7 p-5 gap-4">
+              <CardDemo />
+              <div className="flex flex-col w-full">
+                <Title />
+                <Navigation />
+                <div className="">{children}</div>
+              </div>
             </div>
-          </div>
-        </ThemeProvider>
-        <Analytics />
-      </body>
-    </html>
+          </ThemeProvider>
+          <Analytics />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
