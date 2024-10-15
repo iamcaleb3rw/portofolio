@@ -99,7 +99,7 @@ const gold = [
   },
   {
     name: "Kelly",
-    description: "Bro you love exaggerating",
+    description: "Ugirango se biteye ubwoba",
   },
   {
     name: "Hubert",
