@@ -180,8 +180,8 @@ const Content = () => {
           ))}
         </div>
         <p>
-          While most of these "Friends" drifted away due their own issues, I
-          still acknowledge their impact. I guess that&apos;s how it goes.
+          While most of these Friends drifted away due their own issues, I still
+          acknowledge their impact. I guess that&apos;s how it goes.
         </p>
       </div>
     </div>
