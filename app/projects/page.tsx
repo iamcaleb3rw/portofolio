@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CalcadeBanner from "@/public/calcade.png";
+import TyprBanner from "@/public/typr.png";
 import StudyTimeBanner from "@/public/studytime.png";
 import NyamataBanner from "@/public/nyamata.png";
 import { Button } from "@/components/ui/button";
@@ -27,6 +28,13 @@ const projects = [
     description:
       "Built with ReactJS, Shadcn/ui, and TailwindCSS. Widens school's internet presence to attract students.",
     href: "https://nyamatahs.vercel.app",
+  },
+  {
+    label: "Typr | Frontend Playground",
+    imgUrl: TyprBanner,
+    description:
+      "An online playground with support for HTMLS, CSS and JavaScript built with NextJS. Allows developers to share frontend components.",
+    href: "https://typr-dusky.vercel.app",
   },
 ];
 
