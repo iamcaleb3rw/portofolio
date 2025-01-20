@@ -9,7 +9,7 @@ function Title() {
       </div> */}
       <WordPullUp
         className="text-3xl md:text-4xl lg:text-5xl tracking-tighter font-semibold text-left"
-        words="Junior Front-end Engineer & web designer"
+        words="Front-end Engineer & web designer"
       />
     </div>
   );
