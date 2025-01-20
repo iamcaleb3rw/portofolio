@@ -9,6 +9,13 @@ import Link from "next/link";
 
 const projects = [
   {
+    Label: "Typr | Frontend Playground",
+    imgUrl: TyprBanner,
+    description:
+      "An online playground with support for HTMLS, CSS and JavaScript built with NextJS. Allows developers to share frontend components.",
+    href: "https://typr-dusky.vercel.app",
+  },
+  {
     Label: "Calcade | Startup Landing Page",
     imgUrl: CalcadeBanner,
     description:
@@ -28,13 +35,6 @@ const projects = [
     description:
       "Built with ReactJS, Shadcn/ui, and TailwindCSS. Widens school's internet presence to attract students.",
     href: "https://nyamatahs.vercel.app",
-  },
-  {
-    label: "Typr | Frontend Playground",
-    imgUrl: TyprBanner,
-    description:
-      "An online playground with support for HTMLS, CSS and JavaScript built with NextJS. Allows developers to share frontend components.",
-    href: "https://typr-dusky.vercel.app",
   },
 ];
 
