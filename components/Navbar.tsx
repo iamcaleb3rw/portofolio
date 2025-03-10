@@ -31,7 +31,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { UserButton } from "@clerk/nextjs";
 
 function Navbar() {
   const socials = [
@@ -78,7 +77,6 @@ function Navbar() {
           </Button>
         </Link>
         <ModeToggle />
-        <UserButton />
         <div className="sm:hidden">
           <Sheet>
             <SheetTrigger>
