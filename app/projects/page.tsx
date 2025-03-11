@@ -5,6 +5,7 @@ import TyprBanner from "@/public/typr.png";
 import StudyTimeBanner from "@/public/studytime.png";
 import AplusBanner from "@/public/aplus.png";
 import NyamataBanner from "@/public/nyamata.png";
+import Umurava from "@/public/umurava.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -36,6 +37,13 @@ const projects = [
     description:
       "Built with HTML5, CSS3, and Vanilla JS; Allows users to access science books.",
     href: "https://iamcaleb3rw.github.io/studytime",
+  },
+  {
+    Label: "Umurava Skills Challenge",
+    imgUrl: Umurava,
+    description:
+      "A platform where tech talents participate in tech hackathons and hone their skills.",
+    href: "https://umuravahackathon.vercel.app",
   },
   {
     Label: "Nyamata HS | High School website",
