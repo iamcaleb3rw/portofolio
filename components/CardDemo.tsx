@@ -8,6 +8,7 @@ import calcadeLogo from "@/public/iconlogo.png";
 import Image from "next/image";
 import BlurIn from "./magicui/blur-in";
 import WordPullUp from "./magicui/word-pull-up";
+import JoshProfile from "@/public/Josh.png";
 
 function CardDemo() {
   const languages = [
@@ -58,20 +59,28 @@ function CardDemo() {
         <div className="relative">
           <BlurIn
             word={
-              <Image
-                src={profile}
-                alt="profile Image"
-                width={120}
-                className="z-10"
-              />
+              <div className="flex">
+                <Image
+                  src={profile}
+                  alt="profile Image"
+                  width={100}
+                  className="z-10"
+                />
+                <Image
+                  src={JoshProfile}
+                  alt="profile Image"
+                  width={100}
+                  className="z-10 -ml-14"
+                />
+              </div>
             }
           />
           <div className="absolute -bottom-2 backdrop-blur-xl bg-green-300/40 rounded-lg p-1 left-[25%]">
             <p className="text-xs font-semibold text-green-600">AVAILABLE</p>
           </div>
         </div>
-        <div className="text-3xl font-bold mt-3 tracking-tight">
-          <WordPullUp words="Caleb Ganza" />
+        <div className="text-xl font-bold mt-3 tracking-tight">
+          <WordPullUp words="G.Caleb ✦ H.Joshua" />
         </div>
         <div className="w-full flex flex-col gap-2">
           <Link href="https://instagram.com/iamcaleb3rw" target="_blank">
@@ -104,9 +113,9 @@ function CardDemo() {
       <div className="mt-4 flex flex-col gap-3">
         <h1 className="text-sm text-primary/90"> ● ABOUT</h1>
         <p className="text-muted-foreground">
-          Hi there 👋, I am Caleb a front-end engineer with 4 years of
-          experience. I build professional, high performance websites with
-          perfect SEO practices.
+          Hi there 👋, This is joint portfolio site for me and my brother. I am
+          a front-end engineer with 4 years of experience. I build professional,
+          high performance websites with perfect SEO practices.
           <br />
         </p>
         <div>
