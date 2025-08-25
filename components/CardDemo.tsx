@@ -66,12 +66,6 @@ function CardDemo() {
                   width={100}
                   className="z-10"
                 />
-                <Image
-                  src={JoshProfile}
-                  alt="profile Image"
-                  width={100}
-                  className="z-10 -ml-14"
-                />
               </div>
             }
           />
@@ -80,7 +74,7 @@ function CardDemo() {
           </div>
         </div>
         <div className="text-xl font-bold mt-3 tracking-tight">
-          <WordPullUp words="G.Caleb ✦ H.Joshua" />
+          <WordPullUp words="Ganza Caleb" />
         </div>
         <div className="w-full flex flex-col gap-2">
           <Link href="https://instagram.com/iamcaleb3rw" target="_blank">
@@ -113,9 +107,9 @@ function CardDemo() {
       <div className="mt-4 flex flex-col gap-3">
         <h1 className="text-sm text-primary/90"> ● ABOUT</h1>
         <p className="text-muted-foreground">
-          Hi there 👋, This is joint portfolio site for me and my brother. I am
-          a front-end engineer with 4 years of experience. I build professional,
-          high performance websites with perfect SEO practices.
+          Hi there 👋, This is my portfolio site. I am a front-end engineer with
+          4 years of experience. I build professional, high performance websites
+          with perfect SEO practices.
           <br />
         </p>
         <div>
